@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "author": "Anonymous",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0 },
+    { "type": "wokwi-pushbutton", "id": "btn", "top": 100, "left": 150, "attrs": { "color": "green" } }
+  ],
+  "connections": [
+    [ "esp:33", "btn:2.1", "green", [ "h0" ] ],
+    [ "esp:3V3", "btn:1.1", "red", [ "v0" ] ]
+  ]
+}

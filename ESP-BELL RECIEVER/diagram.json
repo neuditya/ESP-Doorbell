@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Anonymous",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0 },
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": -150, "left": 50 },
+    { "type": "wokwi-buzzer", "id": "bz", "top": 150, "left": 100 }
+  ],
+  "connections": [
+    [ "esp:GND", "lcd:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "lcd:VCC", "red", [ "v0" ] ],
+    [ "esp:21", "lcd:SDA", "blue", [ "v0" ] ],
+    [ "esp:22", "lcd:SCL", "yellow", [ "v0" ] ],
+    [ "esp:18", "bz:1", "purple", [ "v0" ] ],
+    [ "esp:GND", "bz:2", "black", [ "v0" ] ]
+  ]
+}
